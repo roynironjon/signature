@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+:root{
+    --primary:#1E1C75;
+    --secondary:#B32191;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+}
+h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.top-header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffffd4;
+    z-index: 9999999999;
+}
+.top-header .manubar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.top-header .manubar .menu-column{
+    width: 70%;
+    margin-right: 5%;
+    text-align: left;
+}
+.top-header .manubar .menu-column a .icon{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid var(--primary);
+    font-size: 26px;
+    color: #fff;
+    background: var(--primary);
+    transition: .4s;
+}
+.top-header .manubar .menu-column a .icon:hover{
+    border: 1px solid var(--secondary);
+    background: var(--secondary);
+    color: #fff;
+}
+.top-header .manubar .logo-column{
+    text-align: right;
+    width: 25%;
+}
+.top-header .manubar .logo-column a img{
+    width: 190px;
+}
+/* top header section end  */
+.meaga-menu {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 999999999999999;
+    opacity: 0;
+    transition: .6s;
+}
+.show-mega-menu{
+    top: 0;
+    opacity: 1;
+}
+.meaga-menu .nav-menu{
+    padding: 20px 0px;
+    position: relative;
+}
+.meaga-menu .nav-menu .close-btn {
+	position: absolute;
+	right: 0;
+	top: 20%;
+	right: 10%;
+	transform: translateX(50%);
+	cursor: pointer;
+}
+.meaga-menu .nav-menu .close-btn p i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid var(--primary);
+    font-size: 26px;
+    color: #333;
+    transition: .4s;
+    transition: .4s;
+}
+.meaga-menu .nav-menu .close-btn p i:hover{
+    background: #B32191;
+    color: #fff;
+    border: 1px solid #B32191;
+}
+.meaga-menu .nav-menu li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.meaga-menu .nav-menu li a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: .4s;
+}
+.meaga-menu .nav-menu li a:hover{
+    color: #B32191;
+}
+
+.banner-section img{
+    width: 100%;
+    height: 492px;
+    object-fit: cover;
+}
+.meaga-menu .main-column{
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    padding: 80px 0px;
+}
+.meaga-menu .main-column .flex-column{
+    border: 1px solid var(--primary);
+    text-align: center;
+    background: #ffffff9e;
+    border-radius: 10px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.meaga-menu .main-column .flex-column:hover{
+    background: gray;
+}
+.meaga-menu .main-column .flex-column img{
+    max-width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+.meaga-menu  .main-column .flex-column h2 a{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.aboutmenu{
+    position: relative;
+}
+.aboutmenu .dropdown{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background: #fff;
+    width: 200px;
+    text-align: left;
+    border-bottom: 2px solid #1E1C75;
+    border-top: 2px solid #1E1C75;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #dcdcdc;
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+.aboutmenu:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+}
+.aboutmenu .dropdown ul li{
+    line-height: 20px;
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 2px solid #dcdcdc;
+    font-size: 16px;
+}
+/* banner section end */
+.category-section{
+    position: relative;
+    padding: 40px 0px;
+    z-index: 999;
+}
+.category-section .main-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 26px;
+    position: absolute;
+    top: -185px;
+}
+.category-section .main-column .flex-column{
+    border: 1px solid var(--primary);
+    text-align: center;
+    background: #ffffff9e;
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+.category-section .main-column .flex-column img{
+    max-width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+.category-section .main-column .flex-column h2 a{
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+/* category section end */
+.footer-section{
+    background-color: var(--primary);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.footer-section .main-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+.footer-section .main-column .left-column{
+    text-align: left;
+}
+.footer-section .main-column .left-column p{
+    color: #fff;
+}
+.footer-section .main-column .right-column{
+    text-align: right;
+} 
+.footer-section .main-column .right-column li{
+    display: inline-block;
+    list-style: none;
+    font-size: 22px;
+    margin-left: 15px;
+}
+.footer-section .main-column .right-column li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-section .main-column .right-column li a:hover{
+    color: #B32191;
+}
+.footer-section .main-column .right-column .phone{
+    font-size: 16px;
+}
+.owl-theme .owl-dots{
+	position: relative;
+	top: -100px;
+}
+.owl-theme .owl-nav{
+    display: none;
+}

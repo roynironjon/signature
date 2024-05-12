@@ -1,0 +1,96 @@
+.contect-form-section{
+    padding: 90px 0px;
+    position: relative;
+}
+
+.contect-form-section::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/SERVICE-BG.png);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.contect-form-section .main-form{
+   display: grid;
+   grid-template-columns: 4fr 2fr;
+   column-gap: 80px;
+}
+.contect-form-section .main-form .fullname{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.contect-form-section .main-form input, textarea{
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--primary);
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.contect-form-section .main-form textarea{
+    height: 150px;
+    resize: none;
+}
+.contect-form-section .main-form label{
+    font-size: 18px;
+    color: var(--primary);
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.contect-form-section .main-form label span{
+    color: red;
+}
+.contect-form-section .main-form .btn input{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.contect-form-section .main-form .btn input:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+.contect-form-section .main-form .flex-column{
+    margin-bottom: 20px;
+}
+.contect-form-section .main-form .flex-column .icon i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+.contect-form-section .main-form .flex-column .content h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contect-form-section .main-form .flex-column .content .list li{
+    list-style: none;
+    color: #333;
+}
+.contect-form-section .main-form .flex-column .content .list li a{
+    text-decoration: none;
+    color: #333;
+}
+.contect-form-section .main-form .flex-column .content .list li a:hover{
+    color: var(--secondary);
+}
